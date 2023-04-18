@@ -1,0 +1,105 @@
+body {
+
+    background: black;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.credits-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: white;
+    font-family: "Inconsolata", monospace;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.team-member {
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+    color: aliceblue;
+    font-family: "Inconsolata", monospace;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: inset;
+    border-color: red;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    --s: 150px;   /* the size of the image */
+  --b: 4px;     /* the border thickness*/
+  --g: 10px;    /* the gap */
+  --c: #ffffff; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+
+.team-member h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: white;
+    user-select: none;
+    font-family: "Inconsolata", monospace;
+}
+
+.logo a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.logo:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+a.logo {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.gif {
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+}

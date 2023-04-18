@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nova+Oval&family=Rubik+Pixels&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+
+<body>
+  <audio autoplay>
+    <source src="resources/lacucaracha.mp3" type="audio/mpeg">
+  </audio>
+  <div id="caralho">
+    <a href="index.html" class="logo">OnlyDeads</a>
+  </div>
+  
+  <h1 class="welcome"></h1><br>
+
+  <div class="todolist">
+
+    <header id="siteName">Answer truthfully </header>
+
+    <section class="wrapper-list">
+      <ul id="list" class="list">
+      </ul>
+    </section>
+
+    <footer>
+      <ul class="faq">
+
+      </ul>
+    </footer>
+  </div>
+
+  <h2 class="inputDate"></h2><br>
+
+  <h1 class="beReady"></h1> <br>
+
+  <h1 class="finalMessage"></h1>
+
+  <div class="caracthers">
+    <img src="resources/boy.png" width="10%">
+    <img src="resources/oldman.png" width="7%">
+    <img src="resources/senhora.png" width="5%">
+    <img src="resources/velha.png" width="5%">
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const savedUsername = localStorage.getItem('username');
+    const savedDate = localStorage.getItem('date');
+  </script>
+</body>
+
+</html>
